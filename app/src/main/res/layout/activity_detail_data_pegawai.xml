@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/old_blue"
+        app:title="Detail Pegawai"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ImageView untuk gambar pegawai -->
+    <ImageView
+        android:id="@+id/imageViewPegawai"
+        android:layout_width="141dp"
+        android:layout_height="146dp"
+        android:contentDescription="@string/pegawai_photoprofile"
+        android:src="@drawable/baseline_account_circle_24"
+        app:layout_constraintBottom_toTopOf="@id/textViewNama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <!-- TextView untuk nama pegawai -->
+    <TextView
+        android:id="@+id/textViewNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nama_pegawai2"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageViewPegawai"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Button Edit -->
+    <Button
+        android:id="@+id/buttonEditDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_data"
+        android:layout_margin="16dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Content Layout -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNama"
+        app:layout_constraintVertical_bias="0.166"
+        tools:ignore="NotSibling">
+
+        <!-- TextView untuk data pegawai lainnya -->
+        <TextView
+            android:id="@+id/textViewJabatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jabatan"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewUmur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/umur2"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewTglLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tanggal_lahir"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewJenisKelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jenis_kelamin"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alamat"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewGaji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gaji"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewDurasiKerja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/durasi_kerja"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

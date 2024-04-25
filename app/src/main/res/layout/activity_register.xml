@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_marginTop="-26dp"
+    android:layout_marginStart="-26dp"
+    android:layout_marginEnd="-26dp"
+    android:layout_marginBottom="-70dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/old_blue"
+            android:layout_marginStart="0dp"
+            android:text="@string/register_account" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:paddingStart="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/old_blue"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext_bg"
+        android:paddingStart="20dp"
+        android:hint="@string/masukkan_username_anda"
+        android:textColorHint="@color/black_shadow"
+        android:textColor="@color/black"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="8dp"
+        tools:ignore="RtlSymmetry"
+        android:drawableEnd="@drawable/baseline_contacts_24"
+        android:autofillHints=""
+        android:paddingEnd="20dp"
+        android:inputType="text" />
+
+
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:paddingStart="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/old_blue"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="22dp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext_bg"
+        android:paddingStart="20dp"
+        android:hint="@string/masukkan_email_anda"
+        android:textColorHint="@color/black_shadow"
+        android:textColor="@color/black"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="8dp"
+        tools:ignore="RtlSymmetry,TextFields"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/ic_baseline_email_24"
+        android:paddingEnd="20dp"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:text="@string/password"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/old_blue"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="22dp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext_bg"
+        android:hint="@string/masukkan_password_anda"
+        android:textColorHint="@color/black_shadow"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/ic_baseline_lock_open_24"
+        tools:ignore="RtlSymmetry" />
+    <TextView
+        android:id="@+id/passwordTampilRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/editText2"
+        android:layout_alignEnd="@id/editText2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="70dp"
+        android:text="@string/tampilkan_password"
+        android:textColor="@color/old_blue"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        tools:ignore="ObsoleteLayoutParam,RtlSymmetry" />
+    <TextView
+        android:id="@+id/textViewConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:text="@string/confirm_password"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/old_blue"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="2dp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext_bg"
+        android:hint="@string/konfirmasi_password_anda"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="@color/black_shadow"
+        android:textColor="@color/black"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="8dp"
+        android:drawableEnd="@drawable/ic_baseline_lock_open_24"
+        android:autofillHints=""
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/confirmPasswordTampilRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/editText2"
+        android:layout_alignEnd="@id/editText2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="70dp"
+        android:text="@string/tampilkan_password"
+        android:textColor="@color/old_blue"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        tools:ignore="ObsoleteLayoutParam,RtlSymmetry" />
+
+    <CheckBox
+        android:id="@+id/rememberCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/by_signing_in_i_am_agreeing_the_term_and_privacy_policy"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:paddingEnd="20dp"
+        android:textSize="13sp"
+        android:textColor="@color/old_blue"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/old_blue"
+        android:text="@string/register"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/sudah_punya_akun"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:paddingStart="10dp"
+            android:text="@string/masuk"
+            android:textColor="@color/blueKominfo"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+</LinearLayout>

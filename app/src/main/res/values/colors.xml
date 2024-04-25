@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_shadow">#CAC9C9</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_shadow">#F6F3F3</color>
+    <color name="blueKominfo">#3366FF</color>
+    <color name="success">#FF12DD1A</color>
+    <color name="red">#F10A38</color>
+    <color name="old_blue">#194FB6</color>
+    <color name="cyan">#25BABA</color>
+</resources>

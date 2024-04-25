@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/old_blue"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/halo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/halo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+    <!-- Search Box -->
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_edittext_bg"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/rounded_edittext_bg"
+        android:hint="@string/cari"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TextView Galeri Informasi -->
+    <TextView
+        android:id="@+id/textViewGalleryInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/galeri_informasi"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextSearch" />
+
+    <!-- Grid Layout -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewGalleryInfo"
+        android:padding="16dp">
+
+        <!-- Image 1 -->
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_column="0"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_row="0"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kesehatan" />
+
+        <!-- Image 2 -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="145dp"
+            android:layout_height="150dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gambarx" />
+
+        <!-- Image 3 -->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_column="0"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_row="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gambary" />
+
+        <!-- Image 4 -->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="143dp"
+            android:layout_height="150dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/th" />
+    </GridLayout>
+
+    <!-- Kelola Data Pegawai -->
+    <TextView
+        android:id="@+id/textViewKelolaDataPegawai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/kelola_data_pegawai"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gridLayout" />
+
+    <!-- Button Lihat Data Pegawai -->
+    <Button
+        android:id="@+id/buttonLihatDataPegawai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/red"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/baseline_contacts_24"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/lihat_data_pegawai"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/buttonInputPegawai"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewKelolaDataPegawai" />
+
+    <!-- Button Input Pegawai -->
+    <Button
+        android:id="@+id/buttonInputPegawai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/blueKominfo"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/baseline_add_24"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/input_data_pegawai"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/buttonInformasi"
+        app:layout_constraintStart_toEndOf="@id/buttonLihatDataPegawai"
+        app:layout_constraintTop_toBottomOf="@id/textViewKelolaDataPegawai" />
+
+    <!-- Button Informasi -->
+    <Button
+        android:id="@+id/buttonInformasi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/cyan"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/baseline_contact_support_24"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/informasi_aplikasi"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonInputPegawai"
+        app:layout_constraintTop_toBottomOf="@id/textViewKelolaDataPegawai" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/red"
+        android:text="@string/log_out"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
